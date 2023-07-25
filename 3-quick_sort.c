@@ -63,7 +63,7 @@ int lomuto_partition(int *array, int lower, int upper, size_t size)
  *
  * Return: nothing
  */
- 
+
 void quick_sort_aux(int *array, int lower, int upper, size_t size)
 {
 	int pivot_idx;
@@ -73,7 +73,7 @@ void quick_sort_aux(int *array, int lower, int upper, size_t size)
 		pivot_idx = lomuto_partition(array, lower, upper, size);
 		quick_sort_aux(array, lower, pivot_idx - 1, size);
 		quick_sort_aux(array, pivot_idx + 1, upper, size);
-    }
+	}
 }
 
 /**
